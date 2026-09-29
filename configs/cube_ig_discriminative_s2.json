@@ -1,0 +1,36 @@
+{
+  "dataset_id": "cube_without_noise",
+  "n_samples": 256,
+  "n_features": 5,
+  "split_seed": 2,
+  "hard_budgets": [
+    1,
+    2,
+    3
+  ],
+  "budget_unit_cost": 1.0,
+  "predictor": {
+    "name": "policy.predict",
+    "path": null
+  },
+  "output": {
+    "results_dir": "results/",
+    "jsonl": true,
+    "summary": true
+  },
+  "provenance": {
+    "log_git_commit": true,
+    "log_config_path": true
+  },
+  "policy": {
+    "name": "ig_discriminative",
+    "min_samples": 20,
+    "max_candidates": 15,
+    "criterion": "gain",
+    "n_bins": 4,
+    "bin_seed": 0,
+    "seed": 2,
+    "force_acquisition": true,
+    "has_builtin_classifier": true
+  }
+}

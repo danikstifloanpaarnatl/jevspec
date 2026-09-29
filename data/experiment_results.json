@@ -1,0 +1,6709 @@
+{
+ "ab_miniboone_ig_cond_c5": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_cond_c5.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.766,
+    "f1": 0.5834490419327963,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.854,
+    "f1": 0.7919884197388742,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.888,
+    "f1": 0.851455733808675,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.92,
+    "f1": 0.8975640736719183,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_cond_c5.json"
+  }
+ },
+ "ab_miniboone_ig_cond_gainratio": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_cond_gainratio.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.77,
+    "f1": 0.5866610117100732,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.822,
+    "f1": 0.7249537984189479,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.876,
+    "f1": 0.8319455286668401,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.912,
+    "f1": 0.8867753623188406,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_cond_gainratio.json"
+  }
+ },
+ "ab_miniboone_ig_cond_ms10": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_cond_ms10.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.746,
+    "f1": 0.5151746516510785,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.826,
+    "f1": 0.7291390357349672,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.878,
+    "f1": 0.8313342291974275,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.912,
+    "f1": 0.8856548856548856,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_cond_ms10.json"
+  }
+ },
+ "ab_miniboone_ig_cond_ms40": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_cond_ms40.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.75,
+    "f1": 0.5277708517502702,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.816,
+    "f1": 0.708092192100721,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.886,
+    "f1": 0.8450674364368773,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.908,
+    "f1": 0.8804573804573804,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_cond_ms40.json"
+  }
+ },
+ "ab_miniboone_ig_disc_c5": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_disc_c5.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.748,
+    "f1": 0.5264439700532187,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.816,
+    "f1": 0.7124999999999999,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.832,
+    "f1": 0.7503032032531924,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.88,
+    "f1": 0.8382609820793168,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_disc_c5.json"
+  }
+ },
+ "ab_miniboone_ig_disc_ms10": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_disc_ms10.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.728,
+    "f1": 0.45462128260241896,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.73,
+    "f1": 0.479130495173276,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_disc_ms10.json"
+  }
+ },
+ "ab_miniboone_ig_disc_nbins2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_disc_nbins2.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.72,
+    "f1": 0.42545717193604515,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.724,
+    "f1": 0.4402258566978193,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.736,
+    "f1": 0.4934143870314084,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_disc_nbins2.json"
+  }
+ },
+ "ab_miniboone_ig_static_gainratio": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_static_gainratio.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.806,
+    "f1": 0.6861227421870449,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.866,
+    "f1": 0.8188944451952966,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.878,
+    "f1": 0.8410787884472095,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.896,
+    "f1": 0.8692968168747864,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_static_gainratio.json"
+  }
+ },
+ "ab_miniboone_ig_static_nbins2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_static_nbins2.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.78,
+    "f1": 0.620752427184466,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.868,
+    "f1": 0.8201007435835932,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.874,
+    "f1": 0.8306369663048212,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.914,
+    "f1": 0.8911717512236851,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_static_nbins2.json"
+  }
+ },
+ "ab_miniboone_ig_static_nbins8": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/ab_miniboone_ig_static_nbins8.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.828,
+    "f1": 0.7389763014763014,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.87,
+    "f1": 0.8213097718813057,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.878,
+    "f1": 0.8410787884472095,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.896,
+    "f1": 0.8692968168747864,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/ab_miniboone_ig_static_nbins8.json"
+  }
+ },
+ "cube_ig_conditional_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_conditional_s0.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.668103448275862,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.9090909090909091,
+    "f1": 0.8836606950140298,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_conditional_s0.json"
+  }
+ },
+ "cube_ig_conditional_s1": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ec66ffd05a025cbd",
+  "split_seed": 1,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_conditional_s1.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.40310077519379844,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.948051948051948,
+    "f1": 0.9380032206119163,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "ec66ffd05a025cbd",
+   "split_seed": 1,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_conditional_s1.json"
+  }
+ },
+ "cube_ig_conditional_s2": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ff930ee36159607d",
+  "split_seed": 2,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_conditional_s2.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6623376623376623,
+    "f1": 0.6622807017543859,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.8701298701298701,
+    "f1": 0.8634751773049645,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "ff930ee36159607d",
+   "split_seed": 2,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_conditional_s2.json"
+  }
+ },
+ "cube_ig_discriminative_logistic_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_discriminative_logistic_s0.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.668103448275862,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.5649717514124294,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 0.8051948051948052,
+    "f1": 0.7424749163879598,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_discriminative_logistic_s0.json"
+  }
+ },
+ "cube_ig_discriminative_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_discriminative_s0.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.668103448275862,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.9090909090909091,
+    "f1": 0.8836606950140298,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_discriminative_s0.json"
+  }
+ },
+ "cube_ig_discriminative_s1": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ec66ffd05a025cbd",
+  "split_seed": 1,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_discriminative_s1.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.40310077519379844,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.948051948051948,
+    "f1": 0.9380032206119163,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "ec66ffd05a025cbd",
+   "split_seed": 1,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_discriminative_s1.json"
+  }
+ },
+ "cube_ig_discriminative_s2": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ff930ee36159607d",
+  "split_seed": 2,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_discriminative_s2.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6623376623376623,
+    "f1": 0.6622807017543859,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.8701298701298701,
+    "f1": 0.8634751773049645,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "ff930ee36159607d",
+   "split_seed": 2,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_discriminative_s2.json"
+  }
+ },
+ "cube_ig_static_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_static_s0.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.668103448275862,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.9090909090909091,
+    "f1": 0.8836606950140298,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_static",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_static_s0.json"
+  }
+ },
+ "cube_ig_static_s1": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ec66ffd05a025cbd",
+  "split_seed": 1,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_static_s1.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.40310077519379844,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.948051948051948,
+    "f1": 0.9380032206119163,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_static",
+   "dataset_hash": "ec66ffd05a025cbd",
+   "split_seed": 1,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_static_s1.json"
+  }
+ },
+ "cube_ig_static_s2": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ff930ee36159607d",
+  "split_seed": 2,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_ig_static_s2.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6623376623376623,
+    "f1": 0.6622807017543859,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.8701298701298701,
+    "f1": 0.8634751773049645,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "ig_static",
+   "dataset_hash": "ff930ee36159607d",
+   "split_seed": 2,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_ig_static_s2.json"
+  }
+ },
+ "cube_random_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_random_s0.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.40769230769230774,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.5194805194805194,
+    "f1": 0.44625850340136053,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 0.5324675324675324,
+    "f1": 0.51875,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "random",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_random_s0.json"
+  }
+ },
+ "cube_random_s1": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ec66ffd05a025cbd",
+  "split_seed": 1,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_random_s1.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.40310077519379844,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.7012987012987013,
+    "f1": 0.6557823129251701,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 0.7142857142857143,
+    "f1": 0.6957614942528736,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "random",
+   "dataset_hash": "ec66ffd05a025cbd",
+   "split_seed": 1,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_random_s1.json"
+  }
+ },
+ "cube_random_s2": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ff930ee36159607d",
+  "split_seed": 2,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_random_s2.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.5454545454545454,
+    "f1": 0.3529411764705882,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.6751054852320675,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 0.7142857142857143,
+    "f1": 0.7130758807588076,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "random",
+   "dataset_hash": "ff930ee36159607d",
+   "split_seed": 2,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_random_s2.json"
+  }
+ },
+ "cube_sequential_s0": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "8ad1b47025d0004f",
+  "split_seed": 0,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_sequential_s0.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6883116883116883,
+    "f1": 0.668103448275862,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.9090909090909091,
+    "f1": 0.8836606950140298,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "sequential",
+   "dataset_hash": "8ad1b47025d0004f",
+   "split_seed": 0,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_sequential_s0.json"
+  }
+ },
+ "cube_sequential_s1": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ec66ffd05a025cbd",
+  "split_seed": 1,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_sequential_s1.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.40310077519379844,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.948051948051948,
+    "f1": 0.9380032206119163,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "sequential",
+   "dataset_hash": "ec66ffd05a025cbd",
+   "split_seed": 1,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_sequential_s1.json"
+  }
+ },
+ "cube_sequential_s2": {
+  "dataset_id": "cube_without_noise",
+  "dataset_hash": "ff930ee36159607d",
+  "split_seed": 2,
+  "budget_schedule": [
+   1,
+   2,
+   3
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/cube_sequential_s2.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 1,
+    "accuracy": 0.6753246753246753,
+    "f1": 0.6751054852320675,
+    "n_episodes": 77
+   },
+   {
+    "budget": 2,
+    "accuracy": 0.8701298701298701,
+    "f1": 0.8634751773049645,
+    "n_episodes": 77
+   },
+   {
+    "budget": 3,
+    "accuracy": 1.0,
+    "f1": 1.0,
+    "n_episodes": 77
+   }
+  ],
+  "predictor_name": "match_majority",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='match_majority' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "cube",
+   "n_samples": 256,
+   "n_features": 5
+  },
+  "n_train": 179,
+  "n_test": 77,
+  "n_features": 5,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   1,
+   2,
+   3
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "match_majority",
+   "policy_name": "sequential",
+   "dataset_hash": "ff930ee36159607d",
+   "split_seed": 2,
+   "budgets": [
+    1,
+    2,
+    3
+   ],
+   "config_path": "configs/gen/cube_sequential_s2.json"
+  }
+ },
+ "diabetes_ig_conditional_s0": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "ef87a6f50b4808eb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_conditional_s0.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.8,
+    "f1": 0.7619047619047619,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "ef87a6f50b4808eb",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "ef87a6f50b4808eb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_conditional_s0.json"
+  }
+ },
+ "diabetes_ig_conditional_s1": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "bd3461d618a325ec",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_conditional_s1.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.8,
+    "f1": 0.7595864887606685,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "bd3461d618a325ec",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "bd3461d618a325ec",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_conditional_s1.json"
+  }
+ },
+ "diabetes_ig_conditional_s2": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "cc1bf915c259c19f",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_conditional_s2.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.795,
+    "f1": 0.7614545454545454,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "cc1bf915c259c19f",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "cc1bf915c259c19f",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_conditional_s2.json"
+  }
+ },
+ "diabetes_ig_discriminative_s0": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "ef87a6f50b4808eb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_discriminative_s0.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.775,
+    "f1": 0.730853195370675,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "ef87a6f50b4808eb",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "ef87a6f50b4808eb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_discriminative_s0.json"
+  }
+ },
+ "diabetes_ig_discriminative_s1": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "bd3461d618a325ec",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_discriminative_s1.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.8,
+    "f1": 0.751984126984127,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "bd3461d618a325ec",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "bd3461d618a325ec",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_discriminative_s1.json"
+  }
+ },
+ "diabetes_ig_discriminative_s2": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "cc1bf915c259c19f",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_discriminative_s2.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.795,
+    "f1": 0.7614545454545454,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "cc1bf915c259c19f",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "cc1bf915c259c19f",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_discriminative_s2.json"
+  }
+ },
+ "diabetes_ig_static_s0": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "ef87a6f50b4808eb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_static_s0.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.805,
+    "f1": 0.768950502088332,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "ef87a6f50b4808eb",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "ef87a6f50b4808eb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_static_s0.json"
+  }
+ },
+ "diabetes_ig_static_s1": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "bd3461d618a325ec",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_static_s1.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.785,
+    "f1": 0.7402675847905529,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "bd3461d618a325ec",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "bd3461d618a325ec",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_static_s1.json"
+  }
+ },
+ "diabetes_ig_static_s2": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "cc1bf915c259c19f",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_ig_static_s2.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.79,
+    "f1": 0.7587316176470589,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "cc1bf915c259c19f",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "cc1bf915c259c19f",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_ig_static_s2.json"
+  }
+ },
+ "diabetes_random_s0": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "ef87a6f50b4808eb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_random_s0.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.68,
+    "f1": 0.5091271667433656,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "ef87a6f50b4808eb",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "ef87a6f50b4808eb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_random_s0.json"
+  }
+ },
+ "diabetes_random_s1": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "bd3461d618a325ec",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_random_s1.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.645,
+    "f1": 0.4696545284780579,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "bd3461d618a325ec",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "bd3461d618a325ec",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_random_s1.json"
+  }
+ },
+ "diabetes_random_s2": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "cc1bf915c259c19f",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_random_s2.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.78,
+    "f1": 0.7380952380952381,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "cc1bf915c259c19f",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "cc1bf915c259c19f",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_random_s2.json"
+  }
+ },
+ "diabetes_sequential_s0": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "ef87a6f50b4808eb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_sequential_s0.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.78,
+    "f1": 0.7209538305428717,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.77,
+    "f1": 0.7235244620747686,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "ef87a6f50b4808eb",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "ef87a6f50b4808eb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_sequential_s0.json"
+  }
+ },
+ "diabetes_sequential_s1": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "bd3461d618a325ec",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_sequential_s1.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.765,
+    "f1": 0.7069734093955546,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.78,
+    "f1": 0.7300944669365722,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "bd3461d618a325ec",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "bd3461d618a325ec",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_sequential_s1.json"
+  }
+ },
+ "diabetes_sequential_s2": {
+  "dataset_id": "diabetes",
+  "dataset_hash": "cc1bf915c259c19f",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/diabetes_sequential_s2.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.8,
+    "f1": 0.7595864887606684,
+    "n_episodes": 200
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7914494264859229,
+    "n_episodes": 200
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "diabetes",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 500,
+    "n_test": 200,
+    "mode": "fixed_counts"
+   },
+   "n_train": 500,
+   "n_test": 200,
+   "n_features": 8,
+   "full_file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+   "provenance": {
+    "dataset_id": "diabetes",
+    "source": "openml",
+    "openml_id": 37,
+    "url": "https://www.openml.org/data/get_csv/37/dataset_37_diabetes",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/diabetes_openml_37.csv",
+    "file_sha256": "de2e5ee67a97714d8cabfad8abe892375fc621feed7e9bf76c11a4ee43f403f6",
+    "n_rows_full": 768,
+    "label_key": "class",
+    "feature_keys": [
+     "preg",
+     "plas",
+     "pres",
+     "skin",
+     "insu",
+     "mass",
+     "pedi",
+     "age"
+    ],
+    "tried": [
+     "diabetes"
+    ],
+    "subsample": {
+     "n_train": 500,
+     "n_test": 200,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "cc1bf915c259c19f",
+    "hygiene": {
+     "dropped_all_sentinel": 0,
+     "sentinel": null,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 500,
+  "n_test": 200,
+  "n_features": 8,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "cc1bf915c259c19f",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20
+   ],
+   "config_path": "configs/gen/diabetes_sequential_s2.json"
+  }
+ },
+ "miniboone_ig_conditional_s0": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_conditional_s0.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.75,
+    "f1": 0.5277708517502702,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.832,
+    "f1": 0.7375,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.882,
+    "f1": 0.835905993603115,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.914,
+    "f1": 0.8879735721840984,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_conditional_s0.json"
+  }
+ },
+ "miniboone_ig_conditional_s1": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "64d5fbd5c54f9d95",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_conditional_s1.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.798,
+    "f1": 0.6782927217709827,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.824,
+    "f1": 0.7515527950310559,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.836,
+    "f1": 0.7889904479578393,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.868,
+    "f1": 0.8333468002585649,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "64d5fbd5c54f9d95",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "64d5fbd5c54f9d95",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_conditional_s1.json"
+  }
+ },
+ "miniboone_ig_conditional_s2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "8e7fa4816eb4a00c",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_conditional_s2.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.766,
+    "f1": 0.4990366088631984,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.82,
+    "f1": 0.6840242669362994,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.874,
+    "f1": 0.8120872630957282,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.9,
+    "f1": 0.8570807893713841,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "8e7fa4816eb4a00c",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "8e7fa4816eb4a00c",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_conditional_s2.json"
+  }
+ },
+ "miniboone_ig_conditional_s3": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "550ec011292af4e6",
+  "split_seed": 3,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_conditional_s3.json",
+  "policy_name": "ig_conditional",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.754,
+    "f1": 0.514980402053644,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.8,
+    "f1": 0.6641500308981971,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.874,
+    "f1": 0.8226740749497576,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.9,
+    "f1": 0.8644722005377743,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 3,
+    "dataset_hash_split": "550ec011292af4e6",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_conditional",
+   "dataset_hash": "550ec011292af4e6",
+   "split_seed": 3,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_conditional_s3.json"
+  }
+ },
+ "miniboone_ig_discriminative_s0": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_discriminative_s0.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.73,
+    "f1": 0.46766141688814583,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.73,
+    "f1": 0.48999251989029174,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_discriminative_s0.json"
+  }
+ },
+ "miniboone_ig_discriminative_s1": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "64d5fbd5c54f9d95",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_discriminative_s1.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.716,
+    "f1": 0.4369369369369369,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.72,
+    "f1": 0.4569265143992055,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.738,
+    "f1": 0.5101668424083339,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.748,
+    "f1": 0.5449423593655196,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "64d5fbd5c54f9d95",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "64d5fbd5c54f9d95",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_discriminative_s1.json"
+  }
+ },
+ "miniboone_ig_discriminative_s2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "8e7fa4816eb4a00c",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_discriminative_s2.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.75,
+    "f1": 0.42857142857142855,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.75,
+    "f1": 0.42857142857142855,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.758,
+    "f1": 0.46154736158207177,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.772,
+    "f1": 0.526578073089701,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "8e7fa4816eb4a00c",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "8e7fa4816eb4a00c",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_discriminative_s2.json"
+  }
+ },
+ "miniboone_ig_discriminative_s3": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "550ec011292af4e6",
+  "split_seed": 3,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_discriminative_s3.json",
+  "policy_name": "ig_discriminative",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.732,
+    "f1": 0.4226327944572748,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.74,
+    "f1": 0.45357947476377825,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.756,
+    "f1": 0.5215686274509804,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.774,
+    "f1": 0.5858712462710087,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 3,
+    "dataset_hash_split": "550ec011292af4e6",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_discriminative",
+   "dataset_hash": "550ec011292af4e6",
+   "split_seed": 3,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_discriminative_s3.json"
+  }
+ },
+ "miniboone_ig_static_s0": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_static_s0.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.806,
+    "f1": 0.6861227421870449,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.866,
+    "f1": 0.8188944451952966,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.878,
+    "f1": 0.8410787884472095,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.896,
+    "f1": 0.8692968168747864,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_static_s0.json"
+  }
+ },
+ "miniboone_ig_static_s1": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "64d5fbd5c54f9d95",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_static_s1.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.788,
+    "f1": 0.6528141704223877,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.85,
+    "f1": 0.7949912256244568,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.87,
+    "f1": 0.8306577253945675,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.872,
+    "f1": 0.8383968972204267,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "64d5fbd5c54f9d95",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "64d5fbd5c54f9d95",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_static_s1.json"
+  }
+ },
+ "miniboone_ig_static_s2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "8e7fa4816eb4a00c",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_static_s2.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.824,
+    "f1": 0.6821819652711566,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.866,
+    "f1": 0.7944470010737843,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.882,
+    "f1": 0.8308243727598567,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.88,
+    "f1": 0.8316271551724137,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "8e7fa4816eb4a00c",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "8e7fa4816eb4a00c",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_static_s2.json"
+  }
+ },
+ "miniboone_ig_static_s3": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "550ec011292af4e6",
+  "split_seed": 3,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_ig_static_s3.json",
+  "policy_name": "ig_static",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.806,
+    "f1": 0.6756091525038292,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.814,
+    "f1": 0.69663163251326,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.882,
+    "f1": 0.8455101046865425,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.896,
+    "f1": 0.8674659489438056,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 3,
+    "dataset_hash_split": "550ec011292af4e6",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "ig_static",
+   "dataset_hash": "550ec011292af4e6",
+   "split_seed": 3,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_ig_static_s3.json"
+  }
+ },
+ "miniboone_random_s0": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_random_s0.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.718,
+    "f1": 0.4179278230500582,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.906,
+    "f1": 0.8781619564597494,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_random_s0.json"
+  }
+ },
+ "miniboone_random_s1": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "64d5fbd5c54f9d95",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_random_s1.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.692,
+    "f1": 0.43280591649724504,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.724,
+    "f1": 0.5109851169383416,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.716,
+    "f1": 0.5059976065236147,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.882,
+    "f1": 0.8430842717248496,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "64d5fbd5c54f9d95",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "64d5fbd5c54f9d95",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_random_s1.json"
+  }
+ },
+ "miniboone_random_s2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "8e7fa4816eb4a00c",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_random_s2.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.744,
+    "f1": 0.4484850573920237,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.814,
+    "f1": 0.6624931954273271,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.87,
+    "f1": 0.7991235606430519,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.902,
+    "f1": 0.8594982078853046,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "8e7fa4816eb4a00c",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "8e7fa4816eb4a00c",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_random_s2.json"
+  }
+ },
+ "miniboone_random_s3": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "550ec011292af4e6",
+  "split_seed": 3,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_random_s3.json",
+  "policy_name": "random",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.732,
+    "f1": 0.4226327944572748,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.732,
+    "f1": 0.4226327944572748,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.734,
+    "f1": 0.43052879469064437,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.816,
+    "f1": 0.7125,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 3,
+    "dataset_hash_split": "550ec011292af4e6",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "random",
+   "dataset_hash": "550ec011292af4e6",
+   "split_seed": 3,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_random_s3.json"
+  }
+ },
+ "miniboone_sequential_s0": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "2fcc1077cb6255bb",
+  "split_seed": 0,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_sequential_s0.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.726,
+    "f1": 0.4537087988771123,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.802,
+    "f1": 0.6744085087909703,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.832,
+    "f1": 0.7468354430379747,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.922,
+    "f1": 0.90083350708659,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 0,
+    "dataset_hash_split": "2fcc1077cb6255bb",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "2fcc1077cb6255bb",
+   "split_seed": 0,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_sequential_s0.json"
+  }
+ },
+ "miniboone_sequential_s1": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "64d5fbd5c54f9d95",
+  "split_seed": 1,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_sequential_s1.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.716,
+    "f1": 0.44313725490196076,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.816,
+    "f1": 0.7353645066273933,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.834,
+    "f1": 0.7649510928358226,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.898,
+    "f1": 0.8743291393763768,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 1,
+    "dataset_hash_split": "64d5fbd5c54f9d95",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "64d5fbd5c54f9d95",
+   "split_seed": 1,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_sequential_s1.json"
+  }
+ },
+ "miniboone_sequential_s2": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "8e7fa4816eb4a00c",
+  "split_seed": 2,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_sequential_s2.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.758,
+    "f1": 0.46154736158207177,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.802,
+    "f1": 0.629820743499428,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.83,
+    "f1": 0.7001954020556014,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.896,
+    "f1": 0.8549463301421525,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 2,
+    "dataset_hash_split": "8e7fa4816eb4a00c",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "8e7fa4816eb4a00c",
+   "split_seed": 2,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_sequential_s2.json"
+  }
+ },
+ "miniboone_sequential_s3": {
+  "dataset_id": "miniboone",
+  "dataset_hash": "550ec011292af4e6",
+  "split_seed": 3,
+  "budget_schedule": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+  "config_path": "configs/gen/miniboone_sequential_s3.json",
+  "policy_name": "sequential",
+  "curve": [
+   {
+    "budget": 5,
+    "accuracy": 0.738,
+    "f1": 0.44599978009151575,
+    "n_episodes": 500
+   },
+   {
+    "budget": 10,
+    "accuracy": 0.76,
+    "f1": 0.5345084409136047,
+    "n_episodes": 500
+   },
+   {
+    "budget": 20,
+    "accuracy": 0.82,
+    "f1": 0.7052195786605178,
+    "n_episodes": 500
+   },
+   {
+    "budget": 40,
+    "accuracy": 0.902,
+    "f1": 0.8754062012113568,
+    "n_episodes": 500
+   }
+  ],
+  "predictor_name": "logistic_impute",
+  "has_builtin_classifier": true,
+  "note": "Self-eval uses policy.predict with predictor='logistic_impute' (has_builtin_classifier=True). GDFS / cross-method comparisons later need a shared external predictor.",
+  "data_provenance": {
+   "loader": "tabular",
+   "requested_dataset_id": "miniboone",
+   "fallback_used": false,
+   "subsample": {
+    "n_train": 2000,
+    "n_test": 500,
+    "mode": "fixed_counts"
+   },
+   "n_train": 2000,
+   "n_test": 500,
+   "n_features": 50,
+   "full_file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+   "provenance": {
+    "dataset_id": "miniboone",
+    "label_key": "y",
+    "n_features_expected": 50,
+    "source": "uci",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00199/MiniBooNE_PID.txt",
+    "cache_path": "/home/qzqdz/Desktop/project/jev_project/jevtree/data/cache/miniboone_uci_pid.txt",
+    "file_sha256": "577ab8bcb612199a0386cef1725058295df9a18b778a003a6a4349bbd51abd48",
+    "n_rows_full": 130064,
+    "n_rows_after_sentinel_drop": 129596,
+    "dropped_all_sentinel": 468,
+    "tried": [
+     "miniboone"
+    ],
+    "subsample": {
+     "n_train": 2000,
+     "n_test": 500,
+     "mode": "fixed_counts"
+    },
+    "split_seed": 3,
+    "dataset_hash_split": "550ec011292af4e6",
+    "hygiene": {
+     "dropped_all_sentinel": 468,
+     "sentinel": -999.0,
+     "removed_test_feature_leaks": 0
+    }
+   }
+  },
+  "n_train": 2000,
+  "n_test": 500,
+  "n_features": 50,
+  "git_dirty": true,
+  "python_version": "3.13.12",
+  "numpy_version": "2.5.3",
+  "dependency_versions": {
+   "numpy": "2.5.3",
+   "pytest": "9.1.1"
+  },
+  "budgets": [
+   5,
+   10,
+   20,
+   40
+  ],
+  "provenance": {
+   "git_commit": "4f90913d793aa55bda5ee1f3d46d05bb0e89636e",
+   "git_dirty": true,
+   "python_version": "3.13.12",
+   "python_implementation": "CPython",
+   "numpy_version": "2.5.3",
+   "dependency_versions": {
+    "numpy": "2.5.3",
+    "pytest": "9.1.1"
+   },
+   "predictor_name": "logistic_impute",
+   "policy_name": "sequential",
+   "dataset_hash": "550ec011292af4e6",
+   "split_seed": 3,
+   "budgets": [
+    5,
+    10,
+    20,
+    40
+   ],
+   "config_path": "configs/gen/miniboone_sequential_s3.json"
+  }
+ }
+}

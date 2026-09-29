@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jevtree"
+version = "0.1.0"
+description = "jevtree: data + NL goal → FeatureTable → IG decision tree / SOP scaffolding; optional AFA hard-budget eval"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "jevtree contributors" }]
+dependencies = [
+  "numpy==2.5.3",
+]
+
+[project.optional-dependencies]
+# Heavy AFABench stack (torch/lightning/hydra/snakemake/…) deferred; pin when wiring adapter.
+eval = [
+  "numpy==2.5.3",
+]
+
+[project.scripts]
+jevtree = "jevtree.cli.main:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["jevtree*"]

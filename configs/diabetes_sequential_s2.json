@@ -1,0 +1,36 @@
+{
+  "dataset_id": "diabetes",
+  "dataset_path": "data/cache/diabetes_openml_37.csv",
+  "split_seed": 2,
+  "n_train": 500,
+  "n_test": 200,
+  "hard_budgets": [
+    5,
+    10,
+    20
+  ],
+  "budget_unit_cost": 1.0,
+  "predictor": {
+    "name": "logistic_impute",
+    "path": null,
+    "note": "Shared MaskedLogisticPredictor across policies"
+  },
+  "output": {
+    "results_dir": "results/",
+    "jsonl": true,
+    "summary": true
+  },
+  "provenance": {
+    "log_git_commit": true,
+    "log_config_path": true
+  },
+  "policy": {
+    "name": "sequential",
+    "criterion": "gain",
+    "n_bins": 4,
+    "bin_seed": 0,
+    "seed": 2,
+    "force_acquisition": true,
+    "has_builtin_classifier": true
+  }
+}
